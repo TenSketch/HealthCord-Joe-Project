@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthCord</title>
+
+    <link rel="stylesheet" href="main.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="container flex">
+        <button class="nav_toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a href="index.html" class="logo">HealthCord</a>
+        <nav class="nav">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#" class="nav_link">Profile</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">My Health</a></li>
+          </ul>
+          <ul class="nav_list nav_secondary">
+            <li class="nav_item"><a href="#" class="nav_link">Logout</a></li>
+            <li class="nav_item"><a href="#" class="nav_link btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+        <div class="container flex">
+          <div class="image">
+            <img class="mb-2" src="img/health-record.jpg" alt="health-record image">
+          </div>
+            <div class="content">
+              <h1>Maintaining health records <span>don’t have to be a struggle</span>
+              </h1>
+              <p>Save and Organize all your medical reports at one place</p>
+            </div>
+          
+        </div>
+    </section>
+   
+   
+
+
+    <section class="record_form" id="addRecord">
+      <div class="container">
+      <h1 class="mb-2">About HealthCord</h1>
+
+        <ul class="about_list mb-2">
+          <li>
+            Collect and save all your medical records at one place for future reference.
+          </li>
+          <li>Export your health record in PDF and share it with your doctor thro email</li>
+          <li>Do not leave your important health records scattered in your home.</li>
+          <!-- <li>Ask your doctor to send</li> -->
+        </ul>
+        <h1 class="mb-2">Add your past and present health records here</h1>
+        <form action="">
+          <div class="form_group">
+            <label for="Symptoms">Symptoms:</label>
+            <input class="form_control" type="text" name="Symptoms" id="">
+          </div>
+          <div class="form_group">
+            <label for="Physician/Doctor Name">Physician/Doctor Name:</label>
+            <input class="form_control" type="text" name="Physician/Doctor Name" id="">
+          </div>
+          <div class="form_group">
+            <label for="Clinic/Hospital Name">Clinic/Hospital Name:</label>
+            <input class="form_control" type="text" name="Clinic/Hospital Name" id="">
+          </div>
+          <div class="form_group">
+            <label for="Diagnosis">Diagnosis:</label>
+            <textarea class="form_control" name="Diagnosis" id="" rows="4"></textarea>
+          </div>
+          <div class="form_group">
+            <label for="Remedy/treatment advised">Remedy/treatment advised:</label>
+            <textarea class="form_control" name="Remedy/treatment advised:" id="" rows="4"></textarea>
+          </div>
+          <div class="form_group">
+            <label for="Consultation Date">Consultation Date:</label>
+            <input class="form_control" type="date" name="Date" id="">
+          </div>
+          <div class="form_group">
+            <label for="file-upload" class="custom-file-upload">
+              <img src="img/file-arrow-up-solid.svg" alt="file-arrow-up-solid"> Upload Reports
+            </label>
+            <input id="file-upload" type="file" />
+          </div>
+          <div class="form_group">
+            <a href="" class="btn" type="submit" value="Submit">Submit</a>
+          </div>
+        </form>
+      </div>
+    </section>
+ 
+    <footer>
+      <div class="container">
+        <h2 class="mb-1">Future updates</h2>
+        <ul class="mb-2">
+          <li>book appointments</li>
+          <li>choose your family doctor</li>
+          <li>don't choose specialist yourself</li>
+          <li>General physician or physiotherapist shall guide you to a specialist</li>
+        </ul>
+        <div class="flex">
+          <div class="about">
+            <h2 class="mb-1">Contact</h2>
+            <ul>
+              <li>Contact: 9874563210</li>
+              <li>support@email.com</li>
+            </ul>
+          </div>
+   
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+
+ 
+  </body>
+</html>
