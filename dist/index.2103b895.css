@@ -423,10 +423,17 @@ input[type=file] {
   padding: 6px 12px;
   cursor: pointer;
 }
-.custom-file-upload img {
+select {
+  background-color: transparent;
+}
+.svg {
   height: 30px;
   display: unset;
   vertical-align: middle;
   margin-right: 1rem;
+}
+#myBtn {
+  display: block;
+  margin: auto;
 }
 /*# sourceMappingURL=index.2103b895.css.map */

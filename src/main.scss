@@ -451,16 +451,18 @@ input[type="file"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
-  img{
-    height: 30px;
-    display: unset;
-    vertical-align: middle;
-    margin-right: 1rem;
-  }
+
 }
-.record_form{
-
-    
-    
-
+select {
+  background-color: transparent
+}
+.svg{
+  height: 30px;
+  display: unset;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+#myBtn{
+  display: block;
+  margin: auto;
 }

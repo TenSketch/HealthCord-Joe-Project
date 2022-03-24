@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My profile | HealthCord</title>
+
+  <link rel="stylesheet" href="main.scss" />
+  <link rel="stylesheet" href="myhealth.scss" />
+
+</head>
+
+<body>
+  <header>
+    <div class="container flex">
+      <button class="nav_toggle" aria-label="open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <a href="index.html" class="logo">HealthCord</a>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#" class="nav_link">Profile</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">My Health</a></li>
+        </ul>
+        <ul class="nav_list nav_secondary">
+          <li class="nav_item"><a href="login.html" class="nav_link">Login</a></li>
+          <li class="nav_item"><a href="#" class="nav_link btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="myhealth">
+      <div class="container">
+<h1 class="txt-center mb-2">My Health Record</h1>
+<div class="scrollable">
+	<div>
+<table cellpadding="1" cellspacing="1">
+<tr>
+  <th>S.No</th>
+	<th>Symptoms</th>
+	<th>Physician/Doctor Name, Specialisation</th>
+	<th>Clinic/Hospital Name, Location</th>
+	<th>Diagnosis</th>
+	<th>Remedy/treatment advised</th>
+	<th>Consultation Date</th>
+	<th>Report file</th>
+</tr>
+<tr>
+  <td>1</td>
+	<td>back pain</td>
+	<td>Ram Kumar, Physiotherapist</td>
+	<td>Life HealthCare, Mogappair</td>
+	<td>Inflexible muscles due to prolonged sitting for long hours</td>
+	<td>Active physiotherapy for lower back, Soft tissue mobilisation, gym ball exercises</td>
+	<td>01/01/2022</td>
+	<td><img id="myBtn" class="svg" src="img/file-medical-solid.svg" alt="file-medical-solid"> View Report</td>
+</tr>
+
+
+</table>
+		
+	</div><!-- END inner div -->
+</div><!-- END scrollable -->
+  
+      </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h2 class="mb-1">Future updates</h2>
+      <ul class="mb-2">
+        <li>book appointments</li>
+        <li>choose your family doctor</li>
+        <li>don't choose specialist yourself</li>
+        <li>General physician or physiotherapist shall guide you to a specialist</li>
+      </ul>
+      <div class="flex">
+        <div class="about">
+          <h2 class="mb-1">Contact</h2>
+          <ul>
+            <li>Contact: 9874563210</li>
+            <li>support@email.com</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="responsive_table.js"></script>
+
+
+
+
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>My health report title {{symptom-Doc_name-consulation_date}} dynamically to be fetched from form data</h3>
+      <div class="modal_body">
+        <!-- If user input uploaded img then show,
+        <img src="img/general_physician.jpg" alt="general_physician"> 
+      else show PDF below  
+      -->
+
+        <iframe src="Parcel-intro.pdf"></iframe>
+        <!-- <embed src="Parcel-intro.pdf" width="800px" height="2100px" /> -->
+      </div>
+    </div>
+  
+  </div>
+
+<script>
+
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+
+</html>
