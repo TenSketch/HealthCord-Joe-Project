@@ -1,23 +1,24 @@
 {
-  "name": "joe-s-project",
+  "name": "healthcord-joe-project",
   "version": "1.0.0",
   "description": "my final year project - Personal Health record",
   "scripts": {
-    "start": "parcel src/index.html src/login.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel src/index.html src/login.html src/myhealth.html",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TenSketch/Joe-s-Project.git"
+    "url": "git+https://github.com/TenSketch/HealthCord-Joe-Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TenSketch/Joe-s-Project/issues"
+    "url": "https://github.com/TenSketch/HealthCord-Joe-Project/issues"
   },
-  "homepage": "https://github.com/TenSketch/Joe-s-Project#readme",
+  "homepage": "https://github.com/TenSketch/HealthCord-Joe-Project#readme",
   "devDependencies": {
-    "parcel": "^2.3.2"
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0"
   }
 }

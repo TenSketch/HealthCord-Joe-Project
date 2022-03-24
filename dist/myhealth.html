@@ -8,7 +8,6 @@
   <title>My profile | HealthCord</title>
 
   <link rel="stylesheet" href="/index.2103b895.css">
-  <link rel="stylesheet" href="/myhealth.88f7375d.css">
 
 </head>
 
@@ -21,9 +20,9 @@
       <a href="/index.html" class="logo">HealthCord</a>
       <nav class="nav">
         <ul class="nav_list">
-          <li class="nav_item"><a href="#" class="nav_link">Profile</a></li>
+          <li class="nav_item"><a href="/profile.html" class="nav_link">Profile</a></li>
           <li class="nav_item"><a href="#" class="nav_link">About</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">My Health</a></li>
+          <li class="nav_item"><a href="/myhealth.html" class="nav_link">My Health</a></li>
         </ul>
         <ul class="nav_list nav_secondary">
           <li class="nav_item"><a href="/login.html" class="nav_link">Login</a></li>
@@ -33,41 +32,41 @@
     </div>
   </header>
 
-
   <section class="myhealth">
-      <div class="container">
-<h1 class="txt-center mb-2">My Health Record</h1>
-<div class="scrollable">
-	<div>
-<table cellpadding="1" cellspacing="1">
-<tr>
-  <th>S.No</th>
-	<th>Symptoms</th>
-	<th>Physician/Doctor Name, Specialisation</th>
-	<th>Clinic/Hospital Name, Location</th>
-	<th>Diagnosis</th>
-	<th>Remedy/treatment advised</th>
-	<th>Consultation Date</th>
-	<th>Report file</th>
-</tr>
-<tr>
-  <td>1</td>
-	<td>back pain</td>
-	<td>Ram Kumar, Physiotherapist</td>
-	<td>Life HealthCare, Mogappair</td>
-	<td>Inflexible muscles due to prolonged sitting for long hours</td>
-	<td>Active physiotherapy for lower back, Soft tissue mobilisation, gym ball exercises</td>
-	<td>01/01/2022</td>
-	<td><img id="myBtn" class="svg" src="/file-medical-solid.6b16d4c7.svg" alt="file-medical-solid"> View Report</td>
-</tr>
+    <div class="container">
+      <h1 class="txt-center mb-2">My Health Record</h1>
+      <div class="scrollable">
+        <div>
+          <table cellpadding="1" cellspacing="1">
+            <tr>
+              <th>S.No</th>
+              <th>Symptoms</th>
+              <th>Physician/Doctor Name, Specialisation</th>
+              <th>Clinic/Hospital Name, Location</th>
+              <th>Diagnosis</th>
+              <th>Remedy/treatment advised</th>
+              <th>Consultation Date</th>
+              <th>Report file</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>back pain</td>
+              <td>Ram Kumar, Physiotherapist</td>
+              <td>Life HealthCare, Mogappair</td>
+              <td>Inflexible muscles due to prolonged sitting for long hours</td>
+              <td>Active physiotherapy for lower back, Soft tissue mobilisation, gym ball exercises</td>
+              <td>01/01/2022</td>
+              <td><img id="myBtn" class="svg" src="/file-medical-solid.6b16d4c7.svg" alt="file-medical-solid"> View Report
+              </td>
+            </tr>
 
 
-</table>
-		
-	</div><!-- END inner div -->
-</div><!-- END scrollable -->
-  
-      </div>
+          </table>
+
+        </div><!-- END inner div -->
+      </div><!-- END scrollable -->
+
+    </div>
   </section>
 
   <footer>
@@ -91,14 +90,35 @@
       </div>
     </div>
   </footer>
-  <script src="/index.4d6bcbeb.js" defer=""></script>
-  <script src="/myhealth.9d6bfd41.js" defer=""></script>
 
+  <script src="/profile.4d6bcbeb.js" defer=""></script>
 
+  <!-- responsive table js -->
+  <script>function horzScrollbarDetect() {
+    var $scrollable = $('.scrollable');
+    var $innerDiv = $('.scrollable > div');
+    if ($innerDiv.outerWidth() < $innerDiv.get(0).scrollWidth) {
+        $scrollable.addClass('is-scrollable');
+        console.log('Scrollbar, WOOT!');
+    } else {
+        $scrollable.removeClass('is-scrollable');
+        console.log('There is no scrollbar, only Zuul');
+    }
+}
+$(document).ready(function() {
+    horzScrollbarDetect();
+    console.log('document. boom. ready.');
+});
+$(window).resize(function() {
+    horzScrollbarDetect();
+    console.log('window resized');
+});
+
+</script>
 
 
   <!-- The Modal -->
-<div id="myModal" class="modal">
+  <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -114,10 +134,10 @@
         <!-- <embed src="Parcel-intro.pdf" width="800px" height="2100px" /> -->
       </div>
     </div>
-  
-  </div>
 
-<script>// Get the modal
+  </div>
+  <!-- modal js -->
+  <script>// Get the modal
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -137,7 +157,6 @@ window.onclick = function(event) {
 };
 
 </script>
-
 </body>
 
 </html>
