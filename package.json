@@ -2,10 +2,9 @@
   "name": "joe-s-project",
   "version": "1.0.0",
   "description": "my final year project - Personal Health record",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html src/login.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
